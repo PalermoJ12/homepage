@@ -1,0 +1,200 @@
+@font-face {
+  font-family: "CustomFont";
+  src: url("/fonts/MoonTime-Regular.woff2") format("woff2"),
+    url("/fonts/MoonTime-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "CustomFont", Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #fddff1;
+  overflow-x: hidden;
+}
+
+.logo-container {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+
+.logo-container .logo-img {
+  width: 50px;
+  height: 50px;
+}
+
+.nav-container {
+  height: 30px;
+  background: #fefefe;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.nav-container .header-1 {
+  display: flex;
+  background: #fff1;
+  margin-top: -135px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "CustomFont", Arial, sans-serif;
+  font-size: 60px;
+}
+.nav-container .header-1 .heart-img {
+  padding: 20px;
+  width: 50px;
+  height: 50px;
+}
+
+.nav-container .nav-con {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: -110px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nav-container .nav-con .navbar {
+  color: black;
+  text-decoration: none;
+  padding: 40px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+.img-hero {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-hero .hero-img {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+  object-position: 15% 15%;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 18vh;
+}
+
+.about .img-text {
+  margin-top: 50px;
+  position: fixed;
+  width: 60%;
+  height: 60%;
+  z-index: -1;
+}
+
+.about .text {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.about .text .makeup {
+  width: 80px;
+  height: 90px;
+}
+
+@media only screen and (max-width: 600px) {
+  .nav-container .header-1 {
+    display: flex;
+    background: #fff1;
+    margin-top: -135px;
+    margin-left: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "CustomFont", Arial, sans-serif;
+    font-size: 60px;
+  }
+  .nav-container .header-1 .heart-img {
+    width: 50px;
+    height: 50px;
+  }
+  .nav-container .nav-con {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: -70px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .nav-container .nav-con .navbar {
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+  }
+
+  .img-hero {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .img-hero .hero-img {
+    height: 100%;
+  }
+
+  .about {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .about .img-text {
+    margin-top: 30px;
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    z-index: -1;
+  }
+
+  .about .text {
+    margin-top: 5px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+
+  .about .text .makeup {
+    width: 80px;
+    height: 90px;
+  }
+}
