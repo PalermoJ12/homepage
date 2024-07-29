@@ -232,7 +232,7 @@ body {
     align-items: center;
     justify-content: center;
     background: transparent;
-    bottom: 13%;
+    bottom: 5%;
     z-index: 10;
     cursor: pointer;
   }
@@ -277,7 +277,6 @@ body {
     top: 28%;
     right: 10%;
     display: flex;
-  
   }
 
   .img-container img {
@@ -301,6 +300,7 @@ body {
     width: 100vw;
     font-size: 20px;
     position: absolute;
+    text-align: center;
     top: 130%;
     left: 0%;
   }
