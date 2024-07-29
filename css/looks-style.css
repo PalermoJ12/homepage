@@ -1,0 +1,296 @@
+body {
+  font-family: "BioRhyme", serif;
+  margin: 0;
+  padding: 0;
+  background: #fddff1;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+  overflow-y: hidden; /* Prevent vertical overflow */
+}
+
+.header {
+  display: flex;
+  background-color: white;
+  align-items: center;
+  height: 10vh;
+}
+
+.title-header {
+  width: 45%;
+  display: flex;
+  font-weight: 500;
+  z-index: 1;
+  font-style: normal;
+}
+
+.title-header a {
+  font-size: 4em;
+  color: #ff69b4;
+  text-shadow: 2px 2px 0 #fddff1, 4px 4px 0 #ff69b4;
+}
+
+.ribbon-1,
+.ribbon-2 {
+  width: 100%;
+}
+
+.ribbon {
+  width: 70px;
+  height: 70px;
+  margin-right: 4%;
+}
+
+.ribbon-last,
+.ribbon2-last {
+  width: 70px;
+  height: 70px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  height: 90vh; /* Ensure it fits within the viewport */
+}
+
+.first-col,
+.second-col,
+.third-col {
+  height: 100%; /* Fill the height of the parent */
+}
+
+.first-col {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.second-col {
+  width: 40%;
+}
+
+.third-col {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.left-img {
+  width: 100%;
+  height: 75%;
+}
+
+.arrow {
+  width: 30%;
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.8;
+}
+
+.left-down-img,
+.right-down-img {
+  width: 100%;
+  height: 100%;
+}
+
+.first-col-first,
+.first-col-third,
+.third-col-first,
+.third-col-third {
+  height: 100%;
+}
+
+.first-col-second {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 15%;
+  rotate: 180deg;
+}
+
+.third-col-second {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 15%;
+}
+
+.first-col-second:hover .arrow,
+.third-col-second:hover .arrow-third {
+  transform: scale(1.1);
+  opacity: 1;
+  cursor: pointer;
+}
+
+.right-img {
+  width: 105%;
+  height: 78%;
+}
+
+.img-main {
+  width: 150%;
+  height: auto;
+}
+
+.main-img {
+  width: 47%;
+  position: absolute;
+  height: 47%;
+  top: 35%;
+  left: 38%;
+  transform: translate(-50%, -50%);
+}
+
+.arrow-third {
+  width: 30%;
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.8;
+}
+
+.img-description {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 35px;
+  font-style: normal;
+  text-align: center;
+  align-self: center;
+  margin: 20px;
+}
+
+.img-carousel {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  position: absolute;
+  top: 30%;
+  left: 24%;
+}
+
+.img-container {
+  display: none;
+}
+
+.img-container img {
+  width: 20vw;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 110px;
+}
+
+.img-container:first-child {
+  display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+  .ribbon-1,
+  .ribbon-2 {
+    width: 100%;
+  }
+
+  .ribbon {
+    display: none;
+  }
+
+  .ribbon2-last {
+    width: 60%;
+    height: 60%;
+    padding-left: 20px;
+  }
+
+  .title-header {
+    width: 100%;
+  }
+
+  .title-header a {
+    font-size: 3em;
+    margin-left: 10px;
+  }
+
+  .ribbon-last {
+    width: 60%;
+    height: 60%;
+    margin-left: 20px;
+  }
+
+  .first-col-first,
+  .first-col-third,
+  .third-col-first,
+  .third-col-third {
+    display: none;
+  }
+
+  .first-col-second,
+  .third-col-second {
+    position: absolute;
+    height: 20%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    bottom: 10%;
+    z-index: 10;
+    cursor: pointer;
+  }
+
+  .first-col-second {
+    left: 5%;
+  }
+
+  .third-col-second {
+    right: 5%;
+  }
+
+  .arrow,
+  .arrow-third {
+    width: 50%;
+    height: auto;
+  }
+
+  .img-main {
+    position: absolute;
+    width: 250%;
+    top: 20%;
+    height: 60%;
+    display: none;
+    background-color: red;
+  }
+
+  .main-img {
+    width: 47%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    top: 35%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+  }
+
+  .img-carousel {
+    width: 100%;
+    height: 20vh;
+    position: absolute;
+    top: 30%;
+    left: 24%;
+  }
+
+  .img-container img {
+    width: 85vw;
+    height: 50vh;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .img-description {
+    width: 160%;
+    font-size: 20px;
+    position: absolute;
+    top: 250%;
+    left: -1%;
+  }
+}
